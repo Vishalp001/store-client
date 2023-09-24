@@ -1,7 +1,7 @@
 import axios from 'axios';
 export const Axios = axios.create({
   // baseURL: 'http://localhost:8080/api',
-  baseURL: 'https://store-api-production-aec5.up.railway.app/api',
+  baseURL: 'https://store-server-production.up.railway.app/api',
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json',
