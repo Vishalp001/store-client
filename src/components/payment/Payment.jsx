@@ -16,6 +16,8 @@ const Payment = () => {
     setSelectedOption(option);
   };
 
+  const BASEURL = 'https://store-api-production-aec5.up.railway.app/api';
+
   const makePayment = async () => {
     const stripe = await loadStripe(
       'pk_test_51NpFpYSEKxyQ7sG7WKXbgvfJjoZ0C2aHmWW0QCChxo8b9HCf9FZQnYr7JUMVugKITSpbkeJHymT6rf6k9OCaQx7j00Epx0iiUk'
@@ -24,14 +26,11 @@ const Payment = () => {
     const headers = {
       'Content-Type': 'application/json',
     };
-    const response = await fetch(
-      'http://localhost:8080/api/create-checkout-session',
-      {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify(body),
-      }
-    );
+    const response = await fetch(`${BASEURL}/create-checkout-session`, {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(body),
+    });
 
     const session = await response.json();
     const result = stripe.redirectToCheckout({
