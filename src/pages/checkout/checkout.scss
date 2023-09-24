@@ -1,0 +1,16 @@
+.checkoutContainer {
+  display: flex;
+  margin-top: 25px;
+  width: 100;
+  justify-content: space-between;
+  gap: 40px;
+  .colOne {
+    width: 70%;
+    > div {
+      margin-bottom: 20px;
+    }
+  }
+  .colTwo {
+    width: 30%;
+  }
+}

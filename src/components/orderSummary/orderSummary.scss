@@ -1,0 +1,114 @@
+.cartContainer {
+  .header {
+    color: #fff;
+    background-color: #2874f0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 24px;
+    border-radius: 2px 2px 0 0;
+    .number {
+      background-color: #fff;
+      position: relative;
+      top: -2px;
+      font-size: 12px;
+      color: #2874f0;
+      border-radius: 2px;
+      padding: 3px 7px;
+      vertical-align: baseline;
+      margin-right: 17px;
+    }
+    .heading {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .cartItems {
+    .cartItem {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 15px;
+      // margin-bottom: 25px;
+      box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.4);
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+      .colOne {
+        display: flex;
+        gap: 15px;
+        width: 90%;
+        .producImage {
+          border-radius: 10px;
+          background-color: #f5f6f6;
+          width: 150px;
+          img {
+            -webkit-transition: all 200ms ease;
+            transition: all 200ms ease;
+            cursor: pointer;
+            width: 100%;
+          }
+        }
+        .productDesc {
+          text-transform: capitalize;
+          h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 4px;
+          }
+          .desc {
+            display: block;
+            color: #878787;
+            font-size: 14px;
+          }
+          .price {
+            font-weight: 500;
+            margin: 10px 0;
+            font-size: 18px;
+            span {
+              margin-right: 3px;
+            }
+          }
+          .quantity {
+            span {
+              font-weight: 400;
+            }
+            font-weight: 500;
+          }
+        }
+      }
+      .removeBtn {
+        padding: 0 32px;
+        height: 40px;
+        border-radius: 2px;
+        border: 1px solid #e0e0e0;
+        color: #2874f0;
+        font-size: 14px;
+        font-weight: 500;
+        background: #fff;
+        margin-left: auto;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+    }
+    .btnDiv {
+      display: flex;
+      justify-content: flex-end;
+      .orangeBtn {
+        background: #fb641b;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+        color: #fff;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        padding: 10px 25px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}

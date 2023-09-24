@@ -1,0 +1,60 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  background-color: #ffffff;
+  color: #000;
+
+  /* background-color: #000;
+  color: #fff; */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+ul {
+  list-style-type: none;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*  global classes */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}

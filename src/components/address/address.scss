@@ -1,0 +1,190 @@
+.addressContainer {
+  .header {
+    color: #fff;
+    background-color: #2874f0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 24px;
+    border-radius: 2px 2px 0 0;
+    .number {
+      background-color: #fff;
+      position: relative;
+      top: -2px;
+      font-size: 12px;
+      color: #2874f0;
+      border-radius: 2px;
+      padding: 3px 7px;
+      vertical-align: baseline;
+      margin-right: 17px;
+    }
+    .heading {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .addresses {
+    letter-spacing: 0;
+    .address {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 16px 24px 12px;
+      .addressInner {
+        display: flex;
+        svg {
+          margin-right: 15px;
+          font-size: 18px;
+          color: #2874f0;
+        }
+      }
+      label {
+        // display: flex;
+        // justify-content: space-between;
+        gap: 18px;
+        input {
+          letter-spacing: 0;
+        }
+        .addressItem {
+          // width: 100%;
+          // max-width: 823px;
+          margin-top: -3px;
+          .addressRowOne {
+            line-height: 1.5;
+            font-weight: 500;
+
+            .addressType {
+              margin: 0 0 0 11px;
+              text-transform: uppercase;
+              font-size: 11px;
+              color: #878787;
+              vertical-align: middle;
+              padding: 4px 7px;
+              border-radius: 2px;
+              background-color: #f0f0f0;
+            }
+            .mobileNo {
+              margin: 0 0 0 11px;
+            }
+          }
+          .addressRowTwo {
+            margin-top: 10px;
+            line-height: 1.5;
+            font-size: 14px;
+            color: #212121;
+          }
+        }
+        .editBtn {
+          display: flex;
+          justify-content: flex-end;
+          // width: 100%;
+        }
+      }
+      .delever {
+        background: #fb641b;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+        color: #fff;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        padding: 10px 25px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .chnage {
+        padding: 0 32px;
+        height: 40px;
+        border-radius: 2px;
+        border: 1px solid #e0e0e0;
+        color: #2874f0;
+        font-size: 14px;
+        font-weight: 500;
+        background: #fff;
+        margin-left: auto;
+        cursor: pointer;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+  .newAddress {
+    font-size: 14px;
+    padding: 16px;
+    margin-top: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.4);
+
+    width: 100%;
+    .newAddressSpan {
+      color: #2874f0;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+    .form {
+      max-width: 600px;
+      width: 100%;
+      overflow: hidden;
+      .row {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        margin: 10px 0;
+        font-size: 16px;
+        input,
+        .area,
+        select {
+          background-color: #f5faff;
+          border: none;
+          padding: 15px;
+          border-radius: 0;
+          width: 100%;
+          &:focus-visible {
+            border: none;
+            outline: none;
+          }
+        }
+        .area {
+          height: 100px;
+          font-family: sans-serif;
+        }
+      }
+      .editaddressType {
+        p {
+          font-size: 12px;
+          color: #878787;
+          margin-bottom: 10px;
+        }
+        label {
+          margin-left: 12px;
+          width: auto;
+          border-bottom: none;
+          display: inline-block;
+          margin-right: 32px;
+        }
+        .btnDiv {
+          margin-top: 20px;
+          .saveBtn {
+            background: #fb641b;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+            border: none;
+            color: #fff;
+            letter-spacing: 1px;
+            margin-top: 15px;
+            padding: 10px 25px;
+            font-size: 14px;
+            margin-right: 20px;
+          }
+          .cancleBtn {
+            border: none;
+            outline: none;
+            font-weight: 500;
+            color: #2874f0;
+            background-color: transparent;
+            border: none;
+            margin-left: 20px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
