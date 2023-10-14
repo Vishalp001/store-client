@@ -1,7 +1,7 @@
 import {APIRequest, REQUEST_TYPES} from '../helpers/apiRequest.ts';
 
 // const BASEURL = 'http://localhost:8080/api';
-const BASEURL = 'https://store-server-production.up.railway.app/api';
+const BASEURL = 'https://dd-server-production.up.railway.app/api';
 
 // Fetch All card items of user
 export const fetchCartItem = (userId) => {

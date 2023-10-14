@@ -16,8 +16,8 @@ const Payment = () => {
     setSelectedOption(option);
   };
 
-  const BASEURL = 'https://store-server-production.up.railway.app/api';
   // const BASEURL = 'http://localhost:8080/api';
+  const BASEURL = 'https://dd-server-production.up.railway.app/api';
 
   const makePayment = async () => {
     const stripe = await loadStripe(
